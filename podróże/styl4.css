@@ -1,0 +1,44 @@
+body {
+    font-family: Tahoma;
+}
+
+.banner, .stopka {
+    background-color: rgb(107,142,35);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    clear:both;
+}
+
+.dane {
+    background-color: rgb(255, 218, 185);
+    padding: 3px;
+}
+
+.lewy, .prawy {
+    background-color: rgb(255, 239, 213);
+    float: left;
+}
+
+.srod {
+    background-color: rgb(255, 239, 213);
+    text-align: center;
+    float: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3::first-letter {
+    color: green;
+}
+
+img {
+    width: 100%;
+    padding: 7px;
+}
+
+img:hover {
+    background-color: rgb(255, 218, 185);
+}

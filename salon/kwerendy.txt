@@ -1,0 +1,12 @@
+Zapytanie 1:
+SELECT nazwa, cena FROM uslugi
+
+Zapytanie 2:
+SELECT rodzaj, imie, nastepna_wizyta, telefon FROM zwierzeta WHERE nastepna_wizyta!=0
+
+Zapytanie 3:
+SELECT rodzaj, nazwa FROM zwierzeta JOIN uslugi ON uslugi.id = zwierzeta.usluga_id
+
+Zapytanie 4:
+SELECT MIN(cena) AS minimalna_cena FROM uslugi
+

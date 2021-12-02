@@ -1,0 +1,23 @@
+.banner{
+    background-color: rgb(30,137,157);
+    font-size: 120%;
+    text-align: right;
+    height: 100px;
+}
+.banner,h3{
+    color: white;
+}
+.lewy,.prawy,.srodkowy,img{
+    float: left;
+}
+.lewy,.prawy,.srodkowy{
+    height: 550px;
+}
+.lewy,.prawy{
+    background-color: rgb(58,159,178);
+    width: 20%;
+}
+.srodkowy{
+    background-color: rgb(143,212,225);
+    width: 60%;    
+}

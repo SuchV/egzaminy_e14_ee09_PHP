@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Działania</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function dzialanie(op){
+            var num1=parseInt(document.getElementById("num1").value);
+            var num2=parseInt(document.getElementById("num2").value);
+            if ( isNaN(num1) || isNaN(num2))
+                {
+                    document.getElementById("wynik").innerHTML="Proszę uzupełnić obie liczby";
+                    return;
+                }
+                
+            switch(op) {
+                case '+':
+                document.getElementById("wynik").innerHTML="Wynik działania wynosi: "+(num1+num2);
+                break;
+
+                case '-':
+                document.getElementById("wynik").innerHTML="Wynik działania wynosi: "+(num1-num2);
+                break;
+
+                case '*':
+                document.getElementById("wynik").innerHTML="Wynik działania wynosi: "+(num1*num2);
+                break;
+
+                case '/':
+                if(num2 == 0)
+                    {
+                        document.getElementById("wynik").innerHTML="Nie wolno dzielić przez zero";
+                        return;
+                    }
+                document.getElementById("wynik").innerHTML="Wynik działania wynosi: "+(num1/num2);
+                break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="baner">
+            <a href="index.html"><img src="baner.jpeg" alt="baner" style="width:800px;height:100px;"></a>
+        </div>
+        <div class="menu">
+            <br></br>
+            <p>Menu</p>
+            <ul>
+                <a href="strona1.html"><li>proste działania</li></a>
+                <a href="strona2.php"><li>potęgowanie</li></a>
+            </ul>
+        </div>
+        <div class="tresc">
+            <br></br>
+            <h1>PROSTE DZIAŁANIA</h1>
+            <form action="*">
+                <label>Podaj pierwszą liczbę:</label> <input type="number" id="num1" />
+                <br><br>
+                <label>Podaj drugą liczbę:</label> <input type="number" id="num2" />
+            </form>
+            <br><button onclick="dzialanie('+')">DODAWANIE</button>
+            <button onclick="dzialanie('-')">ODEJMOWANIE</button>
+            <button onclick="dzialanie('*')">MNOŻENIE</button>
+            <button onclick="dzialanie('/')">DZIELENIE</button>
+            <div id="wynik"></div>
+        </div>
+    </div>
+    </body>
+    </html>

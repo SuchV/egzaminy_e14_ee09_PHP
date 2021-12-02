@@ -1,0 +1,24 @@
+.baner {
+    width: 800px;
+    height: 100px;
+    background-position: center;
+}
+
+.menu {
+    float: left;
+    width: 36%;
+    height: 500px;
+}
+.tresc {
+ font-style:italic;
+
+}
+.wrap {
+    width: 800px;
+}
+h1 {
+    font-style: normal;
+}
+button ~ button {
+    margin: 8px;
+}

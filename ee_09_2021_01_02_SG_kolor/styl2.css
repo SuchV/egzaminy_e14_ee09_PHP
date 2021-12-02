@@ -1,0 +1,51 @@
+#banner {
+    color:white;
+    text-align: center;
+    height: 330px;
+}
+
+.druzyny {
+    color: white;
+    text-align: center;
+    width: 170px;
+    margin: 5px;
+    border: solid white 1px;
+    border-radius: 15px;
+    float: left;
+}
+
+.druzyny:hover {
+    background-color: white;
+    color: black;
+}
+
+#glowny {
+    color: white;
+}
+
+#lewy {
+    background-color: WhiteSmoke;
+    width: 30%;
+    text-align: center;
+    height: 150px;
+    float: left;
+   
+}
+
+#prawy {
+    background-color: whitesmoke;
+    width: 70%;
+    height: 150px;
+    float: left;
+}
+
+body {
+    font-family: Verdana;
+    background-color: seagreen;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 6px;
+    text-transform: capitalize;
+}
