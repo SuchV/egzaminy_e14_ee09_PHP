@@ -1,0 +1,14 @@
+Zapytanie1:
+INSERT INTO miasta (nazwa) VALUES ('Gdańsk'),('Wrocław');
+
+Zapytanie2:
+DELETE FROM pogoda WHERE id=12 
+
+Zapytanie3:
+SELECT AVG(temperatura_dzien) AS 'Średnia temperatura' 
+FROM pogoda JOIN miasta ON pogoda.miasta_id=miasta.id 
+WHERE miasta.nazwa='Poznań' AND data_prognozy LIKE '%-05-%' 
+
+Zapytanie4:
+SELECT SUM(opady) FROM pogoda JOIN miasta ON pogoda.miasta_id=miasta.id 
+WHERE nazwa = 'Poznań' AND data_prognozy LIKE '%-05-%' 

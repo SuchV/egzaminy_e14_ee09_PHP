@@ -1,0 +1,30 @@
+body {
+    font-family: Helvetica;
+}
+
+#banner, #stopka {
+    background-color: #AF4448;
+    color: white;
+    text-align: center;
+    height: 20px;
+}
+
+#lewy, #prawy {
+    background-color: #FFA4A2;
+    height: 650px;
+    width: 50%;
+    float: left;
+}
+#stopka {
+    position: absolute;
+}
+h4 {
+    margin: 0px;
+}
+
+input[type="submit"] {
+    background-color:#AF4448;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}
